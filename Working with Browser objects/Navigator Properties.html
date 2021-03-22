@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Detecting Browser Capabilities</title>
+        <script LANGUAGE="JavaScript">
+            function displayNavigatorProperties()
+            {
+                with(document)
+                {
+                    write("<B>App Name: </B>")
+                    writeln(navigator.appName + "<BR>")
+                    write("<B>App Version: </B>")
+                    writeln(navigator.appVersion + "<BR>")
+                    write("<B>App App Code Name: </B>")
+                    writeln(navigator.appCodeName + "<BR>")
+                    write("<B>Platform: </B>")
+                    writeln(navigator.platform + "<BR>")
+                    write("<B>User Agent: </B>")
+                    writeln(navigator.userAgent + "<BR>")
+                }
+            }
+
+            function displayExplorerProperties()
+            {
+                with(document)
+                {
+                    write("<B>App Name: </B>")
+                    writeln(navigator.appName + "<BR>")
+                    write("<B>App Version: </B>")
+                    writeln(navigator.appVersion + "<BR>")
+                    write("<B>App App Code Name: </B>")
+                    writeln(navigator.appCodeName + "<BR>")
+                    write("<B>Platform: </B>")
+                    writeln(navigator.platform + "<BR>")
+                    write("<B>User Agent: </B>")
+                    writeln(navigator.userAgent + "<BR>")
+                    write("<B>Cookie Enabled: </B>")
+                    writeln(navigator.cookieEnabled + "<BR>")
+                }
+            }
+
+            function displayBrowserProperties()
+            {
+                if (navigator.appName == "Netscape")
+                displayNavigatorProperties()
+                else
+                if (navigator.appName == "Microsoft Internet Explorer")
+                displayExplorerProperties()
+            }
+        </script>
+    </head>
+
+    <body>
+        
+    </body>
+</html>

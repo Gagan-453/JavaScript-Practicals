@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+	<h3>JavaScript Practice</h3>
+	<hr/>
+	<a id="link">Open Google</a>
+</body>
+<script type="text/javascript">
+	let lnk = document.getElementById("link")
+	let att = document.createAttribute("href")
+	att.value = "http://www.google.com"
+	lnk.setAttributeNode(att)
+
+	// CREATING A COMMENT
+	let comm = document.createComment("This is my personal comment")
+	document.body.appendChild(comm)
+</script>
+</html>

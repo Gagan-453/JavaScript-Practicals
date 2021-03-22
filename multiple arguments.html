@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript</title>
+    </head>
+<body>
+
+<h2>JavaScript Practice</h2>
+
+<script type="text/javascript">
+    function sumAll(...nums){
+        let sum = 0;
+        for (let args of nums) {sum+=args};
+        return sum;
+    }
+    function FindSum(){
+        let numSum = 0
+        for (let args of arguments){
+            numSum+=args
+        }
+        return numSum
+    }
+    document.write(`Sum of 2 and 3 = ${sumAll(2, 3)} <br>`)
+    document.write(`Sum of 2, 3, 5 = ${sumAll(2, 3, 5)} <br/>`)
+    document.write(`Sum of 2, 3, 5, 7 = ${FindSum(2, 3, 5, 7, 9)}`)
+</script>
+</body>
+</html>

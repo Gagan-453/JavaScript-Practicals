@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>String methods</title>
+    </head>
+
+    <body>
+        <h1>String Methods</h1>
+        <script type="text/javascript">
+            let word = 'Gagan Adithya'
+            document.write('charAt: ' + word.charAt(3) + '<br>') //Returns the character at the specified index
+            document.write('charCodeAt: ' + word.charCodeAt(3) + '<br>') //Returns the Unicode of the character at the specified index
+            document.write('concat: ' + word.concat(' ', 'Reddy') + '<br>') //Joins two or more strings, and returns a new joined strings
+            document.write('endsWith: ' + word.endsWith('thya') + '<br>') //Checks whether a string ends with specified string/characters
+            document.write('fromCharCode: ' + String.fromCharCode(65) + '<br>') //Converts Unicode values to characters
+            document.write('includes: ', word.includes('agan') + '<br>') //Checks whether a string contains the specified string/characters
+            document.write('indexOf: ' + word.indexOf('Adi') + '<br>') //Returns the position of the first found occurrence of a specified value in a string
+            document.write('lastIndexOf: ' + word.lastIndexOf('a') + '<br>') //Returns the position of the last found occurrence of a specified value in a string
+            document.write('localeCompare: ' + word.localeCompare('Reddy') + '<br>') //Compares two strings in the current locale
+            document.write('repeat: ' + word.repeat(3) + '<br>') //Returns a new string with a specified number of copies of an existing string
+            document.write('replace: ' + word.replace('Adithya', 'Reddy') + '<br>') //Searches a string for a specified value, or a regular expression, and returns a new string where the specified values are replaced
+            document.write('search: ' + word.search('Adithya') + '<br>') //Searches a string for a specified value, or regular expression, and returns the position of the match
+            document.write('slice: ' + word.slice(2, 5) + '<br>') //Extracts a part of a string and returns a new string
+            document.write('split: ' + word.split(' ') + '<br>') //Splits a string into an array of substrings
+            document.write('startsWith: ' + word.startsWith('Gag') + '<br>') //Checks whether a string begins with specified characters
+            document.write('substr: ' + word.substr(5, 9) + '<br>') //Extracts the characters from a string, beginning at a specified start position, and through the specified number of character
+            document.write('substring: ' + word.substring(5, 9) + '<br>') //Extracts the characters from a string, between two specified indices
+            document.write('toLocaleLowerCase: ' + word.toLocaleLowerCase() + '<br>') //Converts a string to lowercase letters, according to the host's locale
+            document.write('toLocaleUpperCase: ' + word.toLocaleUpperCase() + '<br>') //Converts a string to uppercase letters, according to the host's locale
+            document.write('toLowerCase: ', word.toLowerCase() + '<br>') //Converts a string to lowercase letters
+            document.write('toUpperCase: ' + word.toUpperCase() + '<br>') //Converts a string to uppercase letters
+            document.write('toString: ' + word.toString() + '<br>') //Returns the value of a String object
+            document.write('trim: ' + word.trim() + '<br>') //Removes whitespace from both ends of a string
+            document.write('valueOf: ' + word.valueOf() + '<br>') //Returns the primitive value of a String object
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript</title>
+    </head>
+<body>
+
+<h2>JavaScript Practice</h2>
+<form onsubmit="check_palindrome()">
+Enter something: <input type="text" name="username" id="name"/> <br/>
+<button type="submit">CHECK</button>
+</form>
+
+<script type="text/javascript">
+    let name = 'NaMan'
+
+    function check_palindrome(){
+        str = document.forms[0].name.value
+        str = str.toLocaleLowerCase()
+        let split = str.split('')
+        split.reverse()
+        split = split.join('')
+        
+        if (split === str){
+            document.write(`${str} is a palindrome`)
+        }
+        else{
+            document.write(`${str} is not a palindrome`)
+        }
+    }
+</script>
+</body>
+</html>

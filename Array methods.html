@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Array methods</title>
+    </head>
+
+    <body>
+        <h1>Array methods</h1>
+        <script type="text/javascript">
+            let fruits = ['Apple', 'Banana', 'Pomegranate', 'Orange', 'Guava', 'Pineapple']
+            let a = 'Kiwi'
+            let nums = [1, 2, 3, 4, 5, 20, 2]
+
+            document.write('concat: ' + fruits.concat(a) + '<br>') //Joins two or more arrays, and returns a copy of the joined arrays
+            document.write('copyWithin: ' + fruits.copyWithin(2, 0) + '<br>') //Copies array elements within the array, to and from specified positions
+            document.write('entries: ' + fruits.entries() + '<br>') //Returns a key/value pair Array Iteration Object
+            document.write('every: ' + nums.every((age) => {return age>18}) + '<br>') //Checks if every element in an array pass a test
+            document.write('fill: ' + fruits.fill('Custard Apple') + '<br>') //Fill the elements in an array with a static value
+            document.write('filter: ' + nums.filter((age) => {return age<18}) + '<br>') //Creates a new array with every element in an array that pass a test
+            document.write('find: ' + nums.find((age) => {return age<=20}) + '<br>') //Returns the value of the first element in an array that pass a test
+            document.write('findIndex: ' + nums.findIndex((age) => {return age<20}) + '<br>') //Returns the index of the first element in an array that pass a test
+            document.write('forEach: ' + fruits.forEach(show) + '<br>') //Calls a function for each array element
+            document.write('from: ' + Array.from("ABCDEFG") + '<br>') //Creates an array from an object
+            document.write('includes: ' + fruits.includes('Banana') + '<br>') //Check if an array contains the specified element
+            document.write('indexOf: ' + fruits.indexOf('Orange') + '<br>') //Search the array for an element and returns its position
+            document.write('isArray: ' + Array.isArray(fruits) + '<br>') //Checks whether an object is an array
+            document.write('join: ' + fruits.join(' and ') + '<br>') //Joins all elements of an array into a string
+            document.write('keys: ' + fruits.keys() + '<br>') //Returns a Array Iteration Object, containing the keys of the original array
+            document.write('lastIndexOf: ' + nums.lastIndexOf(2) + '<br>') //Search the array for an element, starting at the end, and returns its position
+            document.write('map: ' + nums.map(Math.sqrt) + '<br>') //Creates a new array with the result of calling a function for each array element
+            document.write('pop: ' + nums.pop() + '<br>') //Removes the last element of an array, and returns that element
+            document.write('reverse: ' + fruits.reverse() + '<br>') //Reverses the order of the elements in an array
+            document.write('shift: ' + nums.shift() + '<br>') //Removes the first element of an array, and returns that element
+            document.write('slice: ' + fruits.slice(2, 5) + '<br>') //Selects a part of an array, and returns the new array
+            document.write('some: ' + nums.some((age) => {return age>18}) + '<br>') //Checks if any of the elements in an array pass a test
+            document.write('sort: ' + nums.sort() + '<br>') //Sorts the elements of an array
+            document.write('toString: ' + fruits.toString() + '<br>') //Converts an array to a string, and returns the result
+            document.write('unshift: ' + fruits.unshift('Mango') + '<br>') //Adds new elements to the beginning of an array, and returns the new length
+            document.write('valueOf: ' + fruits.valueOf() + '<br>') //Returns the primitive value of an array
+ 
+            function show(item, index) {
+                document.write(index + ":" + item + "<br>");
+                fruits = ['Apple', 'Banana', 'Pomegranate', 'Orange', 'Guava', 'Pineapple']
+                }
+        </script>
+    </body>
+</html>

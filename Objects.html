@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript</title>
+    </head>
+<body>
+
+<h2>JavaScript Practice</h2>
+
+<script type="text/javascript">
+    let a = 'Marks';
+    let obj = {
+        name : 'Gagan',
+        roll : 453,
+        class: 8,
+        section: 'A',
+        school: "Sainik School Kalikiri"
+
+        /*
+        '+' is added in front of these so that they are not sorted in order!
+
+        "+10" : 'test1',
+        "+1" : 'test2',
+        "+30" : 'test3',
+        "+0" : 'test4',
+        "+100" : 'test5',
+        "+97" : 'test6', */
+    }
+    document.write(obj.name + '<br><br>')
+
+    for (let key in obj){
+        document.write(key + ': ')
+        document.write(obj[key] + '<br/>')
+    }
+    
+</script>
+</body>
+</html>

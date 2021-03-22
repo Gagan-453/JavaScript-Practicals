@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript</title>
+    </head>
+<body>
+
+<h2>JavaScript Practice</h2>
+
+<script type="text/javascript">
+    let obj = {
+        name : 'Gagan',
+        class: 8,
+        roll : 453,
+        sec : 'A'
+    }
+    let strObj = JSON.stringify(obj) // JSON.stringify converts a datatype into a string
+    let Obj = JSON.parse(strObj) // JSON.parse converts a string back to the particular datatype
+    document.write(Obj['name'])
+</script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Online Shopping</title>
+        <script language="JavaScript">
+            <!--
+                function order()
+                {
+                    var order = "Dear "
+                    order = order + document.forms[0].Name.value
+                    order = order + ", you have ordered an item with size "
+                    if (document.forms[0].size.options[0].selected)
+                    {
+                        order = order + "small"
+                    }
+                    if (document.forms[0].size.options[1].selected)
+                    {
+                        order = order + "medium"
+                    }
+                    if (document.forms[0].size.options[2].selected)
+                    {
+                        order = order + "large"
+                    }
+                    order = order + " and will be delivered in a "
+                    if (document.forms[0].packaging[0].checked)
+                    {
+                        order = order + "cardboard box"
+                    }
+                    if (document.forms[0].packaging[1].checked)
+                    {
+                        order = order + "styrofoam-insulated container"
+                    }
+                    order = order + " to the following addredss: "
+                    order = order + document.forms[0].address.value
+                    alert(order)
+                }
+                //-->
+        </script>
+    </head>
+
+    <body>
+        <h1>Online Shopping</h1>
+        <form action="mailto:shopping@online.net" method="POST" onsubmit="order()" enctype="text/plain">
+            Name:
+            <input name="Name" size="20"><BR>
+            Address:
+            <input name="address" size="20"><P>
+            Item size: <BR>
+            Size:
+            <select name="size">
+                <option>Small</option>
+                <option selected>Medium</option>
+                <option>large</option>
+            </select> <br>
+            Packaging: <BR/>
+            <input type="radio" name="packaging">cardboard box <br>
+            <input type="radio" name="packaging">styrofoam-insulated container <br>
+            </P>
+            <input type="submit" value="Order">
+        </form>
+    </body>
+</html>

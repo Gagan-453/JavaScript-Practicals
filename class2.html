@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <h3>JavaScript Practice</h3>
+</body>
+<script type="text/javascript">
+    class me{
+        constructor(){
+            this.name = 'Gagan'
+            this.roll = 453
+            this.class = 8
+            this.school = 'Sainik School Kalikiri'
+        }
+
+        give_details(n){
+            if (n == 'name'){
+                return this.name
+            }
+            else if (n == 'roll'){
+                return this.roll
+            }
+            else if (n == 'class'){
+                return this.class
+            }
+            else if (n == 'school'){
+                return this.school
+            }
+            else{
+                return `The given data cannot be found in the class...`
+            }
+        }
+    }
+
+    let details = new me
+    document.write(details.give_details('school'))
+</script>
+</html>

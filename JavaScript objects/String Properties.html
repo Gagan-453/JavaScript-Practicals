@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>String Properties</title>
+    </head>
+
+    <body>
+        <script type="text/javascript">
+            function employee(name, jobtitle, salary)
+            {
+                this.name = name
+                this.jobtitle = jobtitle
+                this.salary = salary
+            }
+
+            var emp1 = new employee("Gagan Adithya", 'HR Manager', 100000000000000000000)
+            document.write("Name: " + emp1.name + "<BR/> Designation : " + emp1.jobtitle + "<BR/>Salary : Rs." + emp1.salary)
+
+            document.write("<BR/> ----------------------<BR/>")
+            var emp2 = new employee("Ch. Advith", 'Technical Writer', 10000)
+            employee.prototype.doj = 2007;
+            document.write("Name: " + emp2.name + "<BR/> Designation : " + emp2.jobtitle + "<BR/>Date of joining: " + emp2.doj + "<BR/>Salary : Rs." + emp2.salary)
+        </script>
+    </body>
+</html>

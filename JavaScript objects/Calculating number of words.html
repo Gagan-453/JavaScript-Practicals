@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form with String object</title>
+    </head>
+
+    <body style="background-color: orange;">
+        <H3>Enter your text in the given text area</H3>
+        <form name="wordcount">
+            <textarea rows="12" name="wordcount2" cols="38" wrap="virtual"
+            style="color:pink; background-color: blue; font-size:20px"></textarea><br>
+            <input type="button" value="Calculate Words" onclick="countit()">
+            <input type="text" name="wordcount3" size="20">
+        </form>
+        <script type="text/javascript">
+            function countit()
+            {
+                var formcontent = document.wordcount.wordcount2.value
+                formcontent = formcontent.split(" ")
+                document.wordcount.wordcount3.value = formcontent.length
+            }
+        </script>
+    </body>
+</html>

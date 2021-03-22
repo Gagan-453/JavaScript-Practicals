@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>History Object Properties</title>
+        <script language='javascript'>
+            function showCount()
+            {
+                var histcount = history.length;
+                alert("You have visited " + histcount + " web pages so far.")
+            }
+        </script>
+    </head>
+
+    <body>
+        <form>
+            <input type="button" name="activity" value="My Activity" onlick="showCount()"/>
+        </form>
+    </body>
+</html>

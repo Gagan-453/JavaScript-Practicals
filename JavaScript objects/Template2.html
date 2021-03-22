@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Template demo</title>
+    </head>
+
+    <body>
+        <table border="3">
+            <tr>
+                <th>Bike Image</th>
+                <th>Bike Color</th>
+            </tr>
+            <tr>
+            <td>
+                <img name="myimage01" src="bike1.png" />
+                <script type="text/javascript">
+                    document.images.myimage01;
+                </script>
+            </td>
+            <td>
+                <script type="text/javascript">
+                    function bike(color)
+                    {
+                        this.color = color;
+                    }
+                    var bike1 = new bike("Red")
+                    document.write(bike1.color)
+                </script>
+            </td>
+            </tr>
+            <tr>
+                <td>
+                    <img name="myimage02" src="bike2.png" />
+                    <script type="text/javascript">
+                        document.images.myimage02;
+                    </script>
+                </td>
+                <td>
+                    <script type="text/javascript">
+                        function bike(color)
+                        {
+                            this.color = color;
+                        }
+                        var bike2 = new bike("Black");
+                        document.write(bike2.color)
+                    </script>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img name="myimage03" src="bike3.png" />
+                    <script type="text/javascript">
+                        document.images.myimage03;
+                    </script>
+                </td>
+                <td>
+                    <script type="text/javascript">
+                        function bike(color)
+                        {
+                            this.color = color;
+                        }
+                        var bike3 = new bike("Blue");
+                        document.write(bike3.color)
+                    </script>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>

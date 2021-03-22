@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript</title>
+    </head>
+<body>
+
+<h2>JavaScript Practice</h2>
+
+<script type="text/javascript">
+    let obj = {
+        name : 'Gagan',
+        class: 8,
+        roll : 453,
+        sec : 'A'
+        // sch(){
+        //     return 'Sainik School Kalikiri'
+        // }
+    }
+    let test = {
+        school : 'Sainik School Kalikiri'
+    }
+    let copy = Object.assign(test, obj, {roll : 253})
+    copy.name = 'Adithya'
+    document.write(test.school)
+</script>
+</body>
+</html>

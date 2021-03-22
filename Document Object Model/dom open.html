@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+	<h3>JavaScript Practice</h3>
+	<input type="button" onclick="new_window()" value="New" />
+</body>
+<script type="text/javascript">
+	function new_window(){
+		let w = window.open()
+		w.document.open()
+		w.document.write('<h1>Hello World</h1>')
+		w.document.close()
+		}
+</script>
+</html>

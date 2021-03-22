@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>History object methods</title>
+    </head>
+
+    <body>
+        <script type="text/javascript">
+            function funback()
+            {
+                window.history.back()
+            }
+
+            function funfor()
+            {
+                window.history.forward()
+            }
+
+            function fungo()
+            {
+                window.history.go(1)
+            }
+        </script>
+
+        <input id="btnGO" type="button" value="Go to next link" onclick="fungo();" />
+        <input id="btnForward" type="button" value="Forward" onclick="funfor();" />
+        <input ud="btnBack" type="button" value="Back" onclick="funback();" />
+    </body>
+</html>

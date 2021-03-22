@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <h3>JavaScript Practice</h3>
+</body>
+<script type="text/javascript">
+    let obj = {
+        name: 'Gagan',
+        lastName: 'Adithya',
+
+        // Getter is used to define a property of an object with available data
+        get fullName(){
+            return (this.name + ' ' + this.lastName)
+        },
+        // fullName: 'Gagan Adithya'
+
+        // A Setter
+        /* set fullName(val){
+            [this.name, this.lastName] = value.split(" ")
+        } */
+    }
+    // obj.fullName = 'Gahan Adithya'
+    document.write(obj.fullName)
+</script>
+</html>

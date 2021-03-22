@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript</title>
+    </head>
+<body>
+
+<h2>JavaScript Practice</h2>
+
+<script type="text/javascript">
+    let obj = {
+        name : 'Gagan',
+        class: 8,
+        roll : 453,
+        sec : 'A'
+        // sch(){
+        //     return 'Sainik School Kalikiri'
+        // }
+    }
+    // Getting all values of object using Object.keys()
+    for (let key of Object.keys(obj)){
+        document.write(obj[key] + '<br/>')
+    }
+    // Getting all values of object using Object.values()
+    for (let value of Object.values(obj)){
+        document.write(value + '<br/>')
+    }
+    // Getting all keys and values of object using Object.entries()
+    for (let [key, value] of Object.entries(obj)){
+        document.write(`${key} : ${value} </br>`)
+    }
+</script>
+</body>
+</html>

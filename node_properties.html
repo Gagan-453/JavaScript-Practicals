@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Node Properties</title>
+</head>
+<body>
+    <div id="elem">Hello <b>World</b></div>
+    <div>Both divs below are hidden</div>
+    <script type="text/javascript">
+        document.write(document.body.nodeName + '<br>')
+        document.write(document.body.tagName)
+        document.body.innerHTML = 'Hi! I am <b>Gagan</b>'
+        document.body.innerHTML+= '<br/>I am from class 8<br/>'
+        let text = document.body.firstChild
+        let next = text.nextSibling
+        document.write(text.data)
+        document.write(next.data)
+        let e = document.querySelector('#elem')
+        document.write('<br/>' + e.textContent)
+        e.hidden = true
+    </script>
+</body>
+</html>

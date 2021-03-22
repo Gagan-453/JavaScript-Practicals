@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Passing multiple arguments</title>
+    </head>
+
+    <body>
+        <h1>Arguments</h1>
+        <script type="text/javascript">
+            function add() {
+                let sum = 0;
+                for (let i = 0; i < arguments.length; i++) {
+                    sum += arguments[i];
+                }
+                return sum;
+                }
+                document.write('Sum of 10, 20 = ' + add(10, 20) + '<br>')
+                document.write('Sum of 5, 10, 15, 20, 25 = ' + add(5, 10, 15, 20, 25))
+        </script>
+    </body>
+</html>
